@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p /Users/billyschnetzler/temp/subdir
+cd /Users/billyschnetzler/temp
+
+for i in {1..50}; do
+    echo "file $i" > "file_$i.txt"
+done
+
+for i in {1..30}; do
+    echo "sub $i" > "subdir/nest_$i.log"
+done
+
